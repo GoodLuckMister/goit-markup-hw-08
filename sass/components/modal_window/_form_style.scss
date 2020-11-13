@@ -1,0 +1,103 @@
+.form-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  position: relative;
+  width: 450px;
+  height: 40px;
+  margin-bottom: 30px;
+
+  &__input {
+    width: 450px;
+    height: 40px;
+    padding-left: 45px;
+    outline: none;
+    border: 1px solid getColor("input-border");
+    border-radius: 4px;
+    transition: color $time $cubic, border $time $cubic;
+  }
+
+  &__text {
+    position: absolute;
+    top: 13px;
+    left: 43px;
+    transition: transform $time $cubic;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    transition: fill $time $cubic;
+  }
+  &__input:focus {
+    color: getColor("hover");
+    border: 1px solid getColor("hover");
+  }
+  &__input:focus + &__text,
+  &__input:not(:placeholder-shown) + &__text {
+    color: getColor("hover");
+    transform: translate(-37px, -40px);
+  }
+  &__input:focus ~ &__icon,
+  &__input:not(:placeholder-shown) ~ &__icon {
+    fill: getColor("hover");
+  }
+}
+
+.comment {
+  width: 450px;
+  height: 120px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  border: 1px solid getColor("input-border");
+  border-radius: 4px;
+  outline: none;
+  transition: color $time $cubic, border $time $cubic;
+  margin-bottom: 25px;
+  &:focus {
+    border: 1px solid getColor("hover");
+    color: getColor("hover");
+  }
+}
+.checkbox {
+  overflow: hidden;
+
+  &__label {
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  &__input {
+    transform: translateX(-30px);
+  }
+
+  &__icon {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: getColor("text-mini");
+    display: inline-flex;
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url(../images/optim-svg/icon-moon/vector.svg);
+    transform: translate(-11px, 1px);
+    transition: background-image 250ms $cubic;
+  }
+  &__input:checked + &__icon {
+    background-image: url(../images/optim-svg/icon-moon/icon-check.svg);
+  }
+
+  &__link {
+    color: getColor("hover");
+  }
+}

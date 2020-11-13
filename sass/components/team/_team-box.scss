@@ -1,0 +1,72 @@
+.team {
+  width: 100%;
+  background-color: getColor("background-color");
+}
+
+.team-container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    box-shadow: $team-item;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 0.8;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 0.8;
+    letter-spacing: 0.03em;
+    color: getColor("text-mini");
+    text-align: center;
+    margin-top: 0;
+  }
+}
+.symbol-list {
+  @extend %display-center;
+  padding-bottom: 24px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__image {
+    width: 20px;
+    height: 20px;
+    fill: getColor("border");
+    transition: fill $time $cubic;
+  }
+
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    transition: background-color $time $cubic;
+    &:hover,
+    &:focus {
+      background-color: getColor("hover");
+    }
+    &:hover .symbol-list__image,
+    &:focus .symbol-list__image {
+      fill: getColor("background");
+    }
+  }
+}

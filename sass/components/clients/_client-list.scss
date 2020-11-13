@@ -1,0 +1,36 @@
+.clients-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+  }
+
+  &__item {
+    width: 170px;
+    height: 90px;
+  }
+  &__symbol {
+    fill: getColor("border");
+    transition: fill $time $cubic;
+  }
+
+  &__link {
+    @extend %display-center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid getColor("border");
+    border-radius: 4px;
+    outline: 0;
+    transition: border $time $cubic;
+    &:hover,
+    &:focus {
+      border: 1px solid getColor("hover");
+    }
+    &:hover .clients-box__symbol,
+    &:focus .clients-box__symbol {
+      fill: getColor("hover");
+    }
+  }
+}

@@ -1,0 +1,40 @@
+$colors: (
+  "text": rgb(33, 33, 33),
+  "text-mini": rgb(117, 117, 117),
+  "hover": rgb(33, 150, 243),
+  "foreground": rgb(47, 48, 58),
+  "background-color": rgb(245, 244, 250),
+  "border": rgb(175, 177, 184),
+  "background": rgb(255, 255, 255),
+  "background-header": rgb(236, 236, 236),
+  "hidden": rgba(47, 48, 58, 0.8),
+  "is-hidden": rgba(33, 150, 243, 0.9),
+  "input-border": rgba(33, 33, 33, 0.2),
+  "box-shadow": rgba(0, 0, 0, 0.15),
+  "background-a": rgba(255, 255, 255, 0.3),
+  "background-f": rgba(255, 255, 255, 0.1),
+  "modal-window": rgba(12, 11, 11, 0.5),
+  "border-portfolio": rgb(238, 238, 238),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+$time: 250ms;
+$border: 1px solid rgba(255, 255, 255, 0.3);
+$gradient: linear-gradient(to right, rgba(0, 0, 0, 0.5));
+$size-mobile: 480px;
+$size-tablet: 768px;
+$size: 1200px;
+$font: Roboto, sans-serif;
+$font-logo: Raleway;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$padding: 95px 215px;
+$padding-hero: 200px 450px;
+$padding-header: 30px 215px;
+$team-item: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$item-hover: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+$nav-box: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+  0px 1px 3px rgba(0, 0, 0, 0.16);

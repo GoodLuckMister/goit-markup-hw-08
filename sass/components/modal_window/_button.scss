@@ -1,0 +1,25 @@
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(../images/optim-svg/icon-moon/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid getColor("input-border");
+  transition: border $time $cubic, background-image $time $cubic;
+
+  &:hover,
+  &:focus {
+    background-image: url(../images/optim-svg/icon-moon/closed_hover.svg);
+    border: 1px solid getColor("hover");
+  }
+}
+.input-button {
+  position: absolute;
+  bottom: 5%;
+  right: 30%;
+}

@@ -1,0 +1,16 @@
+%container {
+  width: $size;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+%zero-geometry {
+  padding: 0;
+  margin: 0;
+}
+%display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,21 @@
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 200px 250px;
+  max-width: 1600px;
+  height: 600px;
+  background-image: $gradient, url(../images/squoosh/background-monitor.jpg);
+  &__title {
+    font-size: 44px;
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: getColor("background");
+    z-index: 4;
+    &--decor {
+      display: block;
+    }
+  }
+}
