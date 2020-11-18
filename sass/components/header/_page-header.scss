@@ -5,116 +5,20 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  height: 60px;
   @media screen and (min-width: 480px) {
     width: 450px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 738px;
+    height: 80px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
   @media screen and (min-width: 1200px) {
     width: 1170px;
-  }
-}
-.nav {
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    top: 55px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: getColor("background");
-    border-bottom: 1px solid getColor("background-header");
-    display: none;
-    z-index: 10;
-    &.is-open {
-      display: block;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  &__list {
-    &:first-child {
-      @media screen and (max-width: 480px) {
-        margin-bottom: 50px;
-      }
-      @media screen and (min-width: 768px) {
-        display: flex;
-        margin: 0px 150px 0px 0px;
-      }
-      @media screen and (min-width: 1200px) {
-        margin: 0px 250px 0px 0px;
-      }
-    }
-  }
-  &__items {
-    @media screen and (max-width: 480px) {
-      margin-bottom: 20px;
-    }
-    @media screen and (min-width: 480px) {
-      margin: 0;
-    }
-  }
-  &__number {
-    margin: 0;
-  }
-
-  &__items:not(:last-child) {
-    @media screen and (min-width: 1200px) {
-      margin-right: 50px;
-    }
-  }
-}
-.link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 0.88;
-  color: getColor("text");
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color $time $cubic, fill $time $cubic;
-  &:hover,
-  &:focus {
-    color: getColor("hover");
-    fill: getColor("hover");
-  }
-  &--active {
-    color: getColor("hover");
-    &::after {
-      content: "";
-      display: block;
-      margin: 0px auto 0px auto;
-      width: 15%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: getColor("hover");
-      transform: translateY(10px);
-    }
-  }
-
-  &__cont {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: getColor("text-mini");
-    fill: getColor("text-mini");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--symbol {
-      margin-right: 10px;
-    }
   }
 }
