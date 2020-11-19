@@ -353,16 +353,16 @@ summary {
 }
 
 .burger {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  display: block;
+  padding: 0;
   border: none;
   background-color: white;
   cursor: pointer;
   outline: none;
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
 }
 
 @media screen and (min-width: 767px) {
@@ -371,11 +371,15 @@ summary {
   }
 }
 
-.burger__icon-croos {
+.burger:hover, .burger:focus {
+  fill: #2196f3;
+}
+
+.burger__icon-cross {
   display: none;
 }
 
-.burger.is-open .burger__icon-croos {
+.burger.is-open .burger__icon-cross {
   display: block;
 }
 
@@ -383,9 +387,11 @@ summary {
   display: none;
 }
 
+.burger__symbol {
+  padding: 10px;
+}
+
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin: 0px auto 0px auto;
 }
 
@@ -404,6 +410,8 @@ summary {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -452,10 +460,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 480px) {
@@ -477,8 +489,8 @@ img {
             justify-content: space-between;
     width: 738px;
     height: 80px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
@@ -513,12 +525,6 @@ img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -565,7 +571,6 @@ img {
   line-height: 0.88;
   color: #212121;
   letter-spacing: 0.02em;
-  text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -681,6 +686,104 @@ img {
 
 .contacts__symbol {
   margin-right: 10px;
+}
+
+.hero-container {
+  min-width: 480px;
+  max-width: 1600px;
+  min-height: 400px;
+  max-height: 600px;
+  padding: 118px 60px;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-mobile.jpg);
+    background-size: 480px 400px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-mobile@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 3), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767px) and (min-resolution: 288dpi), screen and (max-width: 767px) and (min-resolution: 3dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-mobile@3x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-mobile@3x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-tablet.jpg);
+    background-size: 768px 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/backgroud-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/backgroud-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-tablet@3x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-tablet@3x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-monitor.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-monitor.jpg);
+    background-size: 1600px 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-monitor@2x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-monitor@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6))), url(../images/squoosh/background-monitor@3x.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)), url(../images/squoosh/background-monitor@3x.jpg);
+  }
+}
+
+.hero-container__title {
+  font-size: 26px;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: white;
+  z-index: 4;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container__title {
+    font-size: 44px;
+  }
+}
+
+.hero-container__title--decor {
+  display: block;
 }
 
 .backdrop {

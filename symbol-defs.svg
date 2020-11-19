@@ -106,11 +106,11 @@
             <path
                 d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z" />
         </symbol>
-        <symbol width="40" height="40" viewBox="0 0 24 16" id="burger" xmlns="http://www.w3.org/2000/svg">
+        <symbol width="24" height="16" viewBox="0 0 24 16" id="burger" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
         </symbol>
-        <symbol width="40" height="40" viewBox="0 0 19 19" id="croos" xmlns="http://www.w3.org/2000/svg">
+        <symbol width="19" height="19" viewBox="0 0 19 19" id="cross" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" />
         </symbol>
