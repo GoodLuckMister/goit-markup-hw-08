@@ -1,17 +1,27 @@
 .footer {
   width: 100%;
+  min-width: 480px;
   background-color: getColor("foreground");
 }
 
 .footer-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 463px;
+  }
 }
 
 .address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    left: 70px;
+  }
   & .logo {
     display: inline-block;
     margin-bottom: 20px;
@@ -39,12 +49,22 @@
 }
 .symbol-box {
   display: inline-block;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    right: 70px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   &__title {
     font-size: 14px;
     line-height: 0.9;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: getColor("background");
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 }
 .symbol-list {
@@ -54,6 +74,13 @@
   }
 }
 .footer-form {
+  display: block;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    left: 166px;
+    bottom: 70px;
+  }
+
   &__label {
     display: block;
     font-weight: bold;
@@ -67,7 +94,10 @@
   }
 
   &__input {
-    width: 360px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
+    width: 450px;
     height: 50px;
     background-color: getColor("foreground");
     color: getColor("background-a");
@@ -75,8 +105,10 @@
     border: $border;
     outline: 0;
     padding-left: 16px;
-    margin-right: 6px;
     transition: color $time $cubic, border $time $cubic;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
     &:focus {
       border: 1px solid getColor("hover");
       color: getColor("hover");

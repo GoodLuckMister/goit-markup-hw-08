@@ -1,5 +1,6 @@
 .team {
   width: 100%;
+  min-width: 480px;
   background-color: getColor("background-color");
 }
 
@@ -7,13 +8,34 @@
   padding-top: 95px;
   padding-bottom: 95px;
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &__item {
+    width: 450px;
     box-shadow: $team-item;
     border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      margin: 0px;
+    }
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__image {
@@ -68,5 +90,16 @@
     &:focus .symbol-list__image {
       fill: getColor("background");
     }
+  }
+}
+.other-title {
+  text-align: center;
+  font-size: 28px;
+  line-height: 0.85;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }

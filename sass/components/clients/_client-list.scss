@@ -3,13 +3,26 @@
   padding-bottom: 94px;
   &__list {
     display: flex;
-    justify-content: space-between;
-    width: 1170px;
+    flex-wrap: wrap;
+    margin: -15px;
+    @media screen and(min-width:1200px) {
+      margin: 0;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &__item {
-    width: 170px;
+    width: 210px;
     height: 90px;
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      margin: 0;
+    }
   }
   &__symbol {
     fill: getColor("border");
