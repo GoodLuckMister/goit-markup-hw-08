@@ -80,10 +80,10 @@
   &__label {
     cursor: pointer;
     font-size: 12px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
     @media screen and (min-width: 1200px) {
       font-size: 14px;
-      margin-bottom: 0;
     }
   }
 
@@ -98,7 +98,7 @@
     color: getColor("text-mini");
     display: inline-flex;
     width: 16px;
-    height: 15px;
+    height: 16px;
     cursor: pointer;
     background-image: url(../images/optim-svg/icon-moon/vector.svg);
     transform: translate(-11px, 1px);
