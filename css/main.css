@@ -495,8 +495,17 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -605,6 +614,13 @@ img {
   .nav__link--active::after {
     -webkit-transform: translateY(31px);
             transform: translateY(31px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__link--active::after {
+    -webkit-transform: translateY(27px);
+            transform: translateY(27px);
   }
 }
 
