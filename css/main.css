@@ -831,7 +831,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
+    width: 738px;
   }
 }
 
@@ -843,6 +843,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0px 0px 94px 0px;
+    width: 1170px;
   }
 }
 
@@ -850,22 +851,34 @@ img {
   width: 450px;
 }
 
+@media screen and (max-width: 767px) {
+  .business__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .business__item {
-    width: 354px;
-    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .business__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .business__item:nth-child(n + 3) {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .business__item {
-    width: 270px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
-}
-
-@media screen and (max-width: 767px) {
   .business__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -929,12 +942,14 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 1170px;
   }
 }
 
 .business__image-box--item {
   position: relative;
-  width: 370px;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
 }
 
 .business__image-box--item:not(:last-child) {
@@ -990,7 +1005,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
+    width: 738px;
   }
 }
 
@@ -1001,6 +1016,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 1170px;
   }
 }
 
@@ -1011,17 +1027,28 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-container__item {
-    width: 354px;
-    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .team-container__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team-container__item:nth-child(n + 3) {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-container__item {
-    width: 270px;
-    margin: 0px;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+  .team-container__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1123,36 +1150,66 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-box__list {
+    width: 738px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-box__list {
-    margin: 0;
+    width: 1170px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .clients-box__item {
-  width: 210px;
   height: 90px;
-  margin: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .clients-box__item {
-    width: 226px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients-box__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .clients-box__item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-box__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients-box__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .clients-box__item:nth-child(n + 4) {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-box__item {
-    width: 170px;
-    margin: 0;
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
+  .clients-box__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
