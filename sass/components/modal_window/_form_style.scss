@@ -101,6 +101,8 @@
     height: 16px;
     cursor: pointer;
     background-image: url(../images/optim-svg/icon-moon/vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     transform: translate(-11px, 1px);
     transition: background-image 250ms $cubic;
     @media screen and (min-width: 1200px) {
