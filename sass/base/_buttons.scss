@@ -23,7 +23,6 @@
   background-color: getColor("background");
   cursor: pointer;
   outline: none;
-  transform: translateX(-8px);
   @media screen and (min-width: 767px) {
     display: none;
   }

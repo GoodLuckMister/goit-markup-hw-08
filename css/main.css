@@ -385,8 +385,6 @@ summary {
   background-color: white;
   cursor: pointer;
   outline: none;
-  -webkit-transform: translateX(-8px);
-          transform: translateX(-8px);
 }
 
 @media screen and (min-width: 767px) {
@@ -482,31 +480,22 @@ img {
 
 .header-container {
   position: relative;
-  min-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 480px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding-top: 0px;
     padding-bottom: 0px;
     height: 80px;
@@ -822,6 +811,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   min-width: 450px;
+}
+
+.business.is-up {
+  padding-top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1141,6 +1134,7 @@ img {
 .clients-box {
   padding-top: 94px;
   padding-bottom: 94px;
+  min-width: 480px;
 }
 
 .clients-box__list {
@@ -1436,7 +1430,7 @@ img {
 }
 
 .portfolio-list {
-  min-width: 480px;
+  min-width: 450px;
   padding-bottom: 95px;
 }
 
