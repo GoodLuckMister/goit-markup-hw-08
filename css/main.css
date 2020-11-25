@@ -1797,9 +1797,10 @@ img {
 .checkbox__label {
   cursor: pointer;
   font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  line-height: 0.8;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1808,6 +1809,7 @@ img {
 @media screen and (min-width: 1200px) {
   .checkbox__label {
     font-size: 14px;
+    line-height: 0.6;
   }
 }
 
@@ -1817,21 +1819,15 @@ img {
 }
 
 .checkbox__icon {
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 16px;
-  height: 16px;
+  display: block;
+  width: 19px;
+  height: 19px;
   cursor: pointer;
   background-image: url(../images/optim-svg/icon-moon/vector.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transform: translate(-11px, 1px);
-          transform: translate(-11px, 1px);
+  -webkit-transform: translateX(-11px);
+          transform: translateX(-11px);
   -webkit-transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

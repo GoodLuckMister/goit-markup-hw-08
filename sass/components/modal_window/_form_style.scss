@@ -80,10 +80,12 @@
   &__label {
     cursor: pointer;
     font-size: 12px;
-    display: flex;
+    line-height: 0.8;
+    display: inline-flex;
     align-items: center;
     @media screen and (min-width: 1200px) {
       font-size: 14px;
+      line-height: 0.6;
     }
   }
 
@@ -92,18 +94,14 @@
   }
 
   &__icon {
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: getColor("text-mini");
-    display: inline-flex;
-    width: 16px;
-    height: 16px;
+    display: block;
+    width: 19px;
+    height: 19px;
     cursor: pointer;
     background-image: url(../images/optim-svg/icon-moon/vector.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    transform: translate(-11px, 1px);
+    transform: translateX(-11px);
     transition: background-image 250ms $cubic;
     @media screen and (min-width: 1200px) {
       font-size: 14px;
