@@ -989,7 +989,7 @@ img {
 
 .team {
   width: 100%;
-  min-width: 450px;
+  min-width: 480px;
   background-color: #f5f4fa;
 }
 
@@ -1240,7 +1240,7 @@ img {
 
 .footer {
   width: 100%;
-  min-width: 450px;
+  min-width: 480px;
   background-color: #2f303a;
 }
 
@@ -1436,7 +1436,7 @@ img {
 }
 
 .portfolio-list {
-  min-width: 450px;
+  min-width: 480px;
   padding-bottom: 95px;
 }
 

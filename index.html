@@ -11,7 +11,7 @@
     <!-- ======================backdrop and modal=================================-->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <form action="">
+          <form action=" ">
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
             <div class="input-box">
               <label class="input-box__label">
@@ -172,15 +172,39 @@
       <h3 class="title__image-box">Чем мы занимаемся</h3>
       <ul class="business__image-box">
         <li class="business__image-box--item">
-          <img src="./images/squoosh/business.jpg" alt="noot1" width="370" />
+          <picture>
+            <source srcset="./images/squoosh/business.webp 370w,
+                            ./images/squoosh/business@2x.webp 740w,
+                            ./images/squoosh/business@3x.webp 1110w" type="image/webp">
+            <img srcset="./images/squoosh/business.jpg 370w,
+                        ./images/squoosh/business@2x.jpg 740w,
+                        ./images/squoosh/business@3x.jpg 1110w" src="./images/squoosh/business.jpg" alt="business"
+                          sizes="(min-width:1200px) 33vw,100vw" />
+          </picture>
           <p class="business__image-box--text">Десктопные приложения</p>
         </li>
         <li class="business__image-box--item">
-          <img src="./images/squoosh/mobile_app.jpg" alt="noot" width="370" />
+    <picture>
+      <source srcset="./images/squoosh/mobile_app.webp 370w,
+                      ./images/squoosh/mobile_app@2x.webp 740w,
+                      ./images/squoosh/mobile_app@3x.webp 1110w" type="image/webp">
+      <img srcset="./images/squoosh/mobile_app.jpg 370w,
+                    ./images/squoosh/mobile_app@2x.jpg 740w,
+                    ./images/squoosh/mobile_app@3x.jpg 1110w" src="./images/squoosh/mobile_app.jpg" alt="mobile-app"
+                    sizes="(min-width:1200px) 33vw,100vw" />
+    </picture>
         <p class="business__image-box--text">Мобильные приложения</p>
       </li>
         <li class="business__image-box--item">
-          <img src="./images/squoosh/borders.jpg" alt="noot2" width="370" />
+      <picture>
+      <source srcset="./images/squoosh/borders.webp 370w,
+                      ./images/squoosh/borders@2x.webp 740w,
+                      ./images/squoosh/borders@3x.webp 1110w" type="image/webp">
+      <img srcset="./images/squoosh/borders.jpg 370w,
+                  ./images/squoosh/borders@2x.jpg 740w,
+                  ./images/squoosh/borders@3x.jpg 1110w" src="./images/squoosh/borders.jpg" alt="mobile-app"
+                    sizes="(min-width:1200px) 33vw,100vw" />
+      </picture>
           <p class="business__image-box--text">Дизайнерские решения</p>
         </li>
       </ul>
@@ -193,7 +217,29 @@
       <h2 class="other-title">Наша команда</h2>
       <ul class="team-container__list">
         <li class="team-container__item">
-          <img class="team-container__image" src="./images/squoosh/nikolay.jpg" alt="Nikolay" width="450" />
+          <picture>
+            <source srcset="./images/squoosh/nikolay_mobile.webp 450w,
+                            ./images/squoosh/nikolay_mobile@2x.webp 900w,
+                            ./images/squoosh/nikolay_mobile@3x.webp 1350w" type="image/webp" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/nikolay_mobile.jpg 450w,
+                            ./images/squoosh/nikolay_mobile@2x.jpg 900w,
+                            ./images/squoosh/nikolay_mobile@3x.jpg 1350w" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/nikolay_tablet.webp 354w,
+                            ./images/squoosh/nikolay_tablet@2x.webp 708w,
+                            ./images/squoosh/nikolay_tablet@3x.webp 1062w" type="image/webp" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/nikolay_tablet.jpg 354w,
+                            ./images/squoosh/nikolay_tablet@2x.jpg 708w,
+                            ./images/squoosh/nikolay_tablet@3x.jpg 1062w" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/nikolay.webp 270w,
+                            ./images/squoosh/nikolay@2x.webp 540w,
+                            ./images/squoosh/nikolay@3x.webp 810w" type="image/webp" media="(min-width:1200px)" >
+            <source srcset="./images/squoosh/nikolay.jpg 270w,
+                            ./images/squoosh/nikolay@2x.jpg 540w,
+                            ./images/squoosh/nikolay@3x.jpg 810w" type="image/webp" media="(min-width:1200px)">
+          <img class="team-container__image"
+                            src="./images/squoosh/nikolay.jpg" alt="Nikolay"
+                sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, (min-width:480px) 100vw, 100vw" />
+          </picture>
           <h3 class="team-container__title">Николай Кучеренко</h3>
           <p class="team-container__text">Product Designer</p>
           <ul class="symbol-list">
@@ -217,7 +263,28 @@
           </ul>
         </li>
         <li class="team-container__item">
-          <img class="team-container__image" src="./images/squoosh/olga.jpg" alt="Olga" width="450" />
+          <picture>
+            <source srcset="./images/squoosh/olga_mobile.webp 450w,
+                            ./images/squoosh/olga_mobile@2x.webp 900w,
+                            ./images/squoosh/olga_mobile@3x.webp 1350w" type="image/webp" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/olga_mobile.jpg 450w,
+                            ./images/squoosh/olga_mobile@2x.jpg 900w,
+                            ./images/squoosh/olga_mobile@3x.jpg 1350w" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/olga_tablet.webp 354w,
+                            ./images/squoosh/olga_tablet@2x.webp 708w,
+                            ./images/squoosh/olga_tablet@3x.webp 1062w" type="image/webp" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/olga_tablet.jpg 354w,
+                            ./images/squoosh/olga_tablet@2x.jpg 708w,
+                            ./images/squoosh/olga_tablet@3x.jpg 1062w" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/olga.webp 270w,
+                            ./images/squoosh/olga@2x.webp 540w,
+                            ./images/squoosh/olga@3x.webp 810w" type="image/webp" media="(min-width:1200px)" >
+            <source srcset="./images/squoosh/olga.jpg 270w,
+                            ./images/squoosh/olga@2x.jpg 540w,
+                            ./images/squoosh/olga@3x.jpg 810w" media="(min-width:1200px)" >
+            <img class="team-container__image" src="./images/squoosh/olga.jpg" alt="Olga"
+                        sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, (min-width:480px) 100vw, 100vw" />
+            </picture>
           <h3 class="team-container__title">Ольга Иванова</h3>
           <p class="team-container__text">Frontend Developer</p>
               <ul class="symbol-list">
@@ -244,7 +311,28 @@
               </ul>
         </li>
         <li class="team-container__item">
-          <img class="team-container__image" src="./images/squoosh/andry.jpg" alt="Andry" width="450" />
+          <picture>
+            <source srcset="./images/squoosh/andry_mobile.webp 450w,
+                            ./images/squoosh/andry_mobile@2x.webp 900w,
+                            ./images/squoosh/andry_mobile@3x.webp 1350w" type="image/webp" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/andry_mobile.jpg 450w,
+                            ./images/squoosh/andry_mobile@2x.jpg 900w,
+                            ./images/squoosh/andry_mobile@3x.jpg 1350w" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/andry_tablet.webp 354w,
+                            ./images/squoosh/andry_tablet@2x.webp 708w,
+                            ./images/squoosh/andry_tablet@3x.webp 1062w" type="image/webp" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/andry_tablet.jpg 354w,
+                            ./images/squoosh/andry_tablet@2x.jpg 708w,
+                            ./images/squoosh/andry_tablet@3x.jpg 1062w" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/andry.webp 270w,
+                            ./images/squoosh/andry@2x.webp 540w,
+                            ./images/squoosh/andry@3x.webp 810w" type="image/webp" media="(min-width:1200px)" >
+            <source srcset="./images/squoosh/andry.jpg 270w,
+                            ./images/squoosh/andry@2x.jpg 540w,
+                            ./images/squoosh/andry@3x.jpg 810w" media="(min-width:1200px)" >
+            <img class="team-container__image" src="./images/squoosh/andry.jpg" alt="Andry"
+              sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, (min-width:480px) 100vw, 100vw" />
+          </picture>
           <h3 class="team-container__title">Андрей Шевченко</h3>
           <p class="team-container__text">Marketing</p>
               <ul class="symbol-list">
@@ -271,7 +359,28 @@
               </ul>
         </li>
         <li class="team-container__item">
-          <img class="team-container__image" src="./images/squoosh/ivan.jpg" alt="Ivan" width="450" />
+          <picture>
+            <source srcset="./images/squoosh/ivan_mobile.webp 450w,
+                            ./images/squoosh/ivan_mobile@2x.webp 900w,
+                            ./images/squoosh/ivan_mobile@3x.webp 1350w" type="image/webp" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/ivan_mobile.jpg 450w,
+                            ./images/squoosh/ivan_mobile@2x.jpg 900w,
+                            ./images/squoosh/ivan_mobile@3x.jpg 1350w" media="(max-width:768px)" >
+            <source srcset="./images/squoosh/ivan_tablet.webp 354w,
+                            ./images/squoosh/ivan_tablet@2x.webp 708w,
+                            ./images/squoosh/ivan_tablet@3x.webp 1062w" type="image/webp" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/ivan_tablet.jpg 354w,
+                            ./images/squoosh/ivan_tablet@2x.jpg 708w,
+                            ./images/squoosh/ivan_tablet@3x.jpg 1062w" media="(max-width:1199px)" >
+            <source srcset="./images/squoosh/ivan.webp 270w,
+                            ./images/squoosh/ivan@2x.webp 540w,
+                            ./images/squoosh/ivan@3x.webp 810w" type="image/webp" media="(min-width:1200px)" >
+            <source srcset="./images/squoosh/ivan.jpg 270w,
+                            ./images/squoosh/ivan@2x.jpg 540w,
+                            ./images/squoosh/ivan@3x.jpg 810w" media="(min-width:1200px)" >
+            <img class="team-container__image" src="./images/squoosh/ivan.jpg" alt="Ivan"
+              sizes="(min-width:1200px) 25vw,(min-width:768px) 50vw, (min-width:480px) 100vw, 100vw" />
+          </picture>
           <h3 class="team-container__title">Иван Николаев</h3>
           <p class="team-container__text">UI Designer</p>
               <ul class="symbol-list">
